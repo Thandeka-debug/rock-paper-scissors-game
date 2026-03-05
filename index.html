@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your move:</p>
+        
+        <div class="choices">
+            <button class="choice" id="rock">🪨 Rock</button>
+            <button class="choice" id="paper">📄 Paper</button>
+            <button class="choice" id="scissors">✂️ Scissors</button>
+        </div>
+
+        <div class="game-area">
+            <div class="score-board">
+                <div class="score-card">
+                    <h3>You</h3>
+                    <p id="player-score">0</p>
+                </div>
+                <div class="score-card">
+                    <h3>Computer</h3>
+                    <p id="computer-score">0</p>
+                </div>
+            </div>
+
+            <div class="result-area">
+                <p id="result-message">Click a button to start!</p>
+                <div class="moves-display">
+                    <p>Your move: <span id="player-move">-</span></p>
+                    <p>Computer's move: <span id="computer-move">-</span></p>
+                </div>
+            </div>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+        
+        <!-- Add timestamp for screenshot requirement -->
+        <div class="timestamp" id="timestamp"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

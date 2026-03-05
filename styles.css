@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.choice {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f2f5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.choice:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#rock:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+#paper:hover {
+    background-color: #4ecdc4;
+    color: white;
+}
+
+#scissors:hover {
+    background-color: #45b7d1;
+    color: white;
+}
+
+.game-area {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.score-card {
+    text-align: center;
+}
+
+.score-card h3 {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.score-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.result-area {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#result-message {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.moves-display {
+    display: flex;
+    justify-content: space-around;
+    color: #666;
+}
+
+#reset-btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#reset-btn:hover {
+    background-color: #5a67d8;
+}
+
+.timestamp {
+    margin-top: 20px;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+    .choices {
+        flex-direction: column;
+    }
+    
+    .choice {
+        width: 100%;
+    }
+    
+    .moves-display {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
