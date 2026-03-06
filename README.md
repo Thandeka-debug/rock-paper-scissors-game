@@ -34,8 +34,7 @@ A fun Rock Paper Scissors game built with HTML, CSS, and JavaScript.
 - `screenshots/` - Game screenshots
 
 ## 📅 Created
-
-March 5, 2026
+March 6, 2026
 
 ## 👤 Author
 
