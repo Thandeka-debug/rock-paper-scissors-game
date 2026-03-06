@@ -100,6 +100,10 @@ choiceButtons.forEach(button => {
         const choice = button.id; // 'rock', 'paper', or 'scissors'
         playGame(choice);
     });
+
+// Add welcome message in console
+console.log("🎮 Let's play Rock Paper Scissors! 🎮");
+
 });
 
 // Add event listener to reset button
